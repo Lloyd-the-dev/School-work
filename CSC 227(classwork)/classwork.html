@@ -44,6 +44,7 @@
         }
         #home{
             color: orange;
+            text-decoration: none;
         }
         .aesthetics{
             height: 160px;
@@ -154,6 +155,16 @@
             text-decoration: none;
             font-weight: bolder;
         }
+        .list{
+            text-decoration: none;
+            color: white;
+        }
+        @media (max-width: 400px) {
+             .middle{
+                display: flex;
+                width: 100%;
+             }
+        }
     </style>
 </head>
 <body>
@@ -161,14 +172,14 @@
        <nav>
             <div class="head">
                 <h1>CSC 227 <span>Course</span></h1>
-                <p>by Omosebi</p>
+                <p>by Oreoluwa</p>
             </div>
             <ul class="navbar-ul">
-                <li id="home">Home</li>
-                <li>Support</li>
-                <li>About Us</li>
-                <li>Blog</li>
-                <li>Contact Us</li>
+                <li ><a href="classwork.html" id="home">Home</a></li>
+                <li><a class="list" href="support.html">Support</a></li>
+                <li><a class="list" href="about.html">About Us</a></li>
+                <li><a class="list" href="blog.html">Blog</a></li>
+                <li><a class="list" href="contact.html">Contact Us</a></li>
             </ul>
         </nav>
         <img src="./images/aesthetics.avif" alt="" class="aesthetics">

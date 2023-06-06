@@ -117,18 +117,78 @@
             margin-top: 8px;
         }
         @media (max-width: 400px) {
-           .heading{
-               margin-top: 500px;
+           body{
+              padding-top: 60px;
            }
-           .card-front{
+           .card-front, .card-back{
                width: 100%;
-               margin-top: -400px;
+           }
+           .container{
+               margin-top: -160px;
+               width: 1000px;
            }
             
+        }
+        body{
+            font-family: sans-serif;
+            margin: 0;
+        }
+        .head{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            color: #fff;
+            font-size: 18px;
+            margin-left: 40px;
+        }
+        .navbar-ul li{
+           list-style: none;
+        }
+        .navbar-ul{
+            width: 40%;
+            display: flex;
+            margin-right: 60px;
+            justify-content: space-between;
+        }
+        .navbar-ul li{
+            margin: 0;
+            color: #fff;
+        }
+        nav{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            margin: 0;
+            background: #303030;
+            padding: 1rem;
+        }
+        nav span{
+            color: orangered;
+        }
+        #home{
+            color: orange;
+        }
+        .list{
+            text-decoration: none;
+            color: white;
         }
     </style>
 </head>
 <body>
+    <nav>
+        <div class="head">
+            <h1>CSC 227 <span>Course</span></h1>
+            <p>by Oreoluwa</p>
+        </div>
+        <ul class="navbar-ul">
+            <li><a href="classwork.html" class="list">Home</a></li>
+            <li><a class="list" href="support.html">Support</a></li>
+            <li><a class="list" href="about.html">About Us</a></li>
+            <li><a class="list" href="blog.html">Blog</a></li>
+            <li><a class="list" href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
     <h1 class="heading">CSC 227</h1>
     <div class="container">
        <div class="card">
